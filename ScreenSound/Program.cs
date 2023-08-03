@@ -149,5 +149,9 @@ void ExibirOpcoesMenu()
     }
 }
 
-ExibirOpcoesMenu();
-//TESTE
+//ExibirOpcoesMenu();
+
+// Recriando a aplicação do ScreenSound
+string nome;
+string artista;
+string duração;
