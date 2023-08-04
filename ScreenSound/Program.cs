@@ -1,10 +1,10 @@
 ﻿//Screen Sound
 string mensagemBoasVindas = "Boas vindas ao Screen Sound";
-//List<string> listaDasBandas = new List<string> { "Mc IG", "Mc Hariel", "Mc Ryan SP", "Mc PH", "Mc Kevin", "Mc Daleste", "Mc Dede", "Mc Salvador da Rima" };
+
 Dictionary<string, List<int>> bandasRegistradas = new Dictionary<string, List<int>>();
-bandasRegistradas.Add("Mc IG", new List<int>() {10, 10, 8, 7, 9 });
-bandasRegistradas.Add("Mc PH", new List<int>());
-bandasRegistradas.Add("Mc Salvador da Rima", new List<int>() {10, 10, 6, 5, 4 });
+bandasRegistradas.Add("Zeca Pagodinho", new List<int>() {10, 10, 8, 7, 9 });
+bandasRegistradas.Add("Bezerra da Silva", new List<int>());
+bandasRegistradas.Add("Martinho da Vila", new List<int>() {10, 10, 6, 5, 4 });
 
 void ExibirMensagemBoasVindas()
 {
@@ -152,6 +152,12 @@ void ExibirOpcoesMenu()
 //ExibirOpcoesMenu();
 
 // Recriando a aplicação do ScreenSound
-string nome;
-string artista;
-string duração;
+
+Musica musica1 = new Musica();
+musica1.Nome= "Maneiras";
+musica1.Artista = "Zeca Pagodinho";
+musica1.Duracao = 3.38;
+musica1.Disponivel = true;
+Console.WriteLine(musica1.Disponivel);
+
+musica1.ExibirFichaTecnica();
