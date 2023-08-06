@@ -158,6 +158,7 @@ musica1.Nome= "Maneiras";
 musica1.Artista = "Zeca Pagodinho";
 musica1.Duracao = 3.38;
 musica1.Disponivel = true;
-Console.WriteLine(musica1.Disponivel);
+//Console.WriteLine(musica1.Disponivel);
+Console.WriteLine(musica1.DescricaoResumida);
 
 musica1.ExibirFichaTecnica();
