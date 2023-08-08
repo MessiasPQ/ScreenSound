@@ -153,12 +153,17 @@ void ExibirOpcoesMenu()
 
 // Recriando a aplicação do ScreenSound
 
-Musica musica1 = new Musica();
-musica1.Nome= "Maneiras";
-musica1.Artista = "Zeca Pagodinho";
-musica1.Duracao = 3.38;
-musica1.Disponivel = true;
-//Console.WriteLine(musica1.Disponivel);
-Console.WriteLine(musica1.DescricaoResumida);
+Album albumDoQueen = new Album();
+albumDoQueen.Nome = "A night at the opera";
 
-musica1.ExibirFichaTecnica();
+Musica musica1 = new Musica();
+musica1.Nome = "Love of my life";
+musica1.Duracao = 213;
+
+Musica musica2 = new Musica();
+musica2.Nome = "Bohemian Rhapsody";
+musica2.Duracao = 354;
+
+albumDoQueen.AdicionarMusica(musica1);
+albumDoQueen.AdicionarMusica(musica2);
+albumDoQueen.ExibirMusicasDoAlbum();
