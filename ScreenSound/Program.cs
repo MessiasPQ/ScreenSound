@@ -153,5 +153,25 @@ void ExibirOpcoesMenu()
 
 // Recriando a aplicação do ScreenSound
 Episodio ep1 = new(45, 1, "Tecnicas de facilitação");
-Console.WriteLine(ep1.Resumo);
+ep1.AdicionarConvidados("Messias");
+ep1.AdicionarConvidados("Micael");
+ep1.AdicionarConvidados("Maria Vanilda");
+ep1.AdicionarConvidados("Manoel");
 
+Episodio ep2 = new(77, 2, "Tecnicas de aprendizado");
+ep2.AdicionarConvidados("Ivanete");
+ep2.AdicionarConvidados("Renato");
+ep2.AdicionarConvidados("Regina");
+ep2.AdicionarConvidados("Vanildo");
+
+Episodio ep3 = new(59, 3, "Tecnicas de compreender");
+ep3.AdicionarConvidados("Lucas");
+ep3.AdicionarConvidados("Joao");
+ep3.AdicionarConvidados("Bruno");
+
+Podcast podcast = new("Podcast Gemeos", "Ryan");
+podcast.AdicionarEpisodio(ep1);
+podcast.AdicionarEpisodio(ep2);
+podcast.AdicionarEpisodio(ep3);
+
+podcast.ExibirDetalhes();
